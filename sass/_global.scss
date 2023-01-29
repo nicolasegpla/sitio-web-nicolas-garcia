@@ -1,0 +1,29 @@
+//font-family and font-size
+$font:'Poppins', sans-serif;
+$font-size-display-1: 6rem;
+$font-size-Heading-1: 5rem;
+$font-size-Heading-2: 2.5rem;
+$font-size-Heading-3: 1.8rem;
+$font-size-Heading-4: 1.6rem;
+$font-size-Paragraph-primary: 1.4rem;
+$font-size-Paragraph-secondary: 1.2rem;
+//colors
+$primary-color: #000;
+$secondary-color: #0173EF;
+$withe-color: #fff;
+$primary-text-color: #4A4A4A;
+$secondary-text-color: #A39E9E;
+$support-color: #FF6747;
+
+html {
+    font-size: 62.5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:$font ;
+    font-size: 1.4rem;
+}
