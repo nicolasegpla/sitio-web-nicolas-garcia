@@ -1,0 +1,19 @@
+{
+  "name": "sitio-web-nicolas-garcia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasegpla/sitio-web-nicolas-garcia.git"
+  },
+  "author": "Nicolas-garcia (nicolasgpla@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolasegpla/sitio-web-nicolas-garcia/issues"
+  },
+  "homepage": "https://github.com/nicolasegpla/sitio-web-nicolas-garcia#readme"
+}
