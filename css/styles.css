@@ -89,4 +89,98 @@ body {
   color: #A39E9E;
 }
 
+.section-home-about {
+  margin: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.6rem;
+}
+.section-home-about__div-title {
+  margin-top: 7.4rem;
+  grid-column: 2/4;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-home-about__div-title__h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4A4A4A;
+}
+.section-home-about__div-title__h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #A39E9E;
+}
+.section-home-about__img-profile {
+  grid-column: 1/5;
+  justify-self: center;
+  width: 26.7rem;
+  height: 22.9rem;
+  margin-top: 4.8rem;
+  border-radius: 2.2rem;
+  border: 1rem solid rgba(0, 0, 0, 0.1019607843);
+  object-fit: cover;
+}
+.section-home-about__div-information {
+  grid-column: 1/5;
+  justify-self: center;
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+}
+.section-home-about__div-information__section-experience {
+  width: 12.4rem;
+  height: 10rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-home-about__div-information__section-experience__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4A4A4A;
+}
+.section-home-about__div-information__section-experience__info {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #A39E9E;
+}
+.section-home-about__p--about-me {
+  grid-column: 1/5;
+  justify-self: center;
+  margin: 3.2rem 3rem 0 3rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.section-home-about__button {
+  grid-column: 1/5;
+  justify-self: center;
+  width: 17.8rem;
+  height: 4rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-home-about__button__p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=styles.css.map */

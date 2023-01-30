@@ -1,9 +1,7 @@
 @use 'global';
+//first section home
 .section-home-1 {
-    margin: 0 1.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1.6rem;
+    @include global.sectionHome;
     &__h1 {
         grid-column: 1/4;
         margin-top: 4.4rem;
@@ -74,4 +72,96 @@
             color: global.$secondary-text-color;
         }
     } 
+}
+//second section about me
+.section-home-about {
+    @include global.sectionHome;
+    &__div-title {
+        margin-top: 7.4rem;
+        grid-column: 2/4;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__h2 {
+            font-size: global.$font-size-Heading-2;
+            font-weight: 600;
+            color: global.$primary-text-color;
+        }
+        &__h3 {
+            font-size: global.$font-size-Heading-4;
+            font-weight: 400;
+            color: global.$secondary-text-color;
+        }
+    }
+    &__img-profile {
+        grid-column: 1/5;
+        justify-self: center;
+        width: 26.7rem;
+        height: 22.9rem;
+        margin-top: 4.8rem;
+        border-radius: 2.2rem;
+        border: 1rem solid #0000001a;
+        object-fit: cover;
+    }
+    &__div-information {
+        grid-column: 1/5;
+        justify-self: center;
+        margin-top: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.9rem;
+        &__section-experience {
+            width: 12.4rem;
+            height: 10rem;
+            border: 0.1rem solid #0000001a;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__title {
+                font-size: global.$font-size-Paragraph-primary;
+                font-weight: 500;
+                color: global.$primary-text-color;
+            }
+            &__info {
+                font-size: global.$font-size-Paragraph-secondary;
+                font-weight: 500;
+                color: global.$secondary-text-color;
+            }
+        }
+    }
+    &__p--about-me {
+        grid-column: 1/5;
+        justify-self: center;
+        margin: 3.2rem 3rem 0 3rem;
+        text-align: justify;
+        font-size: global.$font-size-Paragraph-primary;
+        font-weight: 400;
+        color: global.$primary-text-color;
+    }
+    &__button {
+        grid-column: 1/5;
+        justify-self: center;
+        width: 17.8rem;
+        height: 4rem;
+        background-color: global.$primary-color;
+        color: global.$withe-color;
+        border: none;
+        border-radius: 1.2rem;
+        margin-top: 3.2rem;
+        margin-bottom: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        &__p {
+            font-size: global.$font-size-Paragraph-primary;
+            font-weight: 400;
+        }
+
+    }
 }
