@@ -77,23 +77,7 @@
 .section-home-about {
     @include global.sectionHome;
     &__div-title {
-        margin-top: 7.4rem;
-        grid-column: 2/4;
-        justify-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        &__h2 {
-            font-size: global.$font-size-Heading-2;
-            font-weight: 600;
-            color: global.$primary-text-color;
-        }
-        &__h3 {
-            font-size: global.$font-size-Heading-4;
-            font-weight: 400;
-            color: global.$secondary-text-color;
-        }
+        @include global.titleSectionHome; 
     }
     &__img-profile {
         grid-column: 1/5;
@@ -144,24 +128,6 @@
         color: global.$primary-text-color;
     }
     &__button {
-        grid-column: 1/5;
-        justify-self: center;
-        width: 17.8rem;
-        height: 4rem;
-        background-color: global.$primary-color;
-        color: global.$withe-color;
-        border: none;
-        border-radius: 1.2rem;
-        margin-top: 3.2rem;
-        margin-bottom: 4.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.8rem;
-        &__p {
-            font-size: global.$font-size-Paragraph-primary;
-            font-weight: 400;
-        }
-
+        @include global.buttonSectionsHome;
     }
 }
