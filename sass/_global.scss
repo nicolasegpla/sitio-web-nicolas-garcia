@@ -11,9 +11,9 @@ $font-size-Paragraph-secondary: 1.2rem;
 $primary-color: #000;
 $secondary-color: #0173EF;
 $withe-color: #fff;
-$primary-text-color: #4A4A4A;
-$secondary-text-color: #A39E9E;
-$support-color: #FF6747;
+$primary-text-color: #000;
+$secondary-text-color: #4A4A4A;
+$support-color: #AA0CF8;
 
 //parametros del bloque de secction home
 @mixin sectionHome {
@@ -56,6 +56,10 @@ $support-color: #FF6747;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+    &__img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
     &__p {
         font-size: $font-size-Paragraph-primary;
         font-weight: 400;

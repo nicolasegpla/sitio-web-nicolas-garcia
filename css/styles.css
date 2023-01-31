@@ -30,6 +30,8 @@ body {
   grid-column: 4/5;
   margin-top: 6.3rem;
   justify-self: center;
+  width: 2.8rem;
+  height: 2.7rem;
 }
 .section-home-1__div-1 {
   grid-column: 1/5;
@@ -39,10 +41,14 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.section-home-1__div-1__img {
+  width: 5rem;
+  height: 0.1rem;
+}
 .section-home-1__div-1__h2 {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #FF6747;
+  color: #AA0CF8;
 }
 .section-home-1__p {
   grid-column: 1/5;
@@ -54,6 +60,8 @@ body {
   grid-column: 2/4;
   justify-self: center;
   margin-top: 3.7rem;
+  width: 16.3rem;
+  height: 21rem;
 }
 .section-home-1__button {
   grid-column: 1/5;
@@ -69,6 +77,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+}
+.section-home-1__button__img {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .section-home-1__button__p {
   font-size: 1.4rem;
@@ -86,7 +98,11 @@ body {
 .section-home-1__div-2__p {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #A39E9E;
+  color: #4A4A4A;
+}
+.section-home-1__div-2__img {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .section-home-about {
@@ -107,12 +123,12 @@ body {
 .section-home-about__div-title__h2 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #4A4A4A;
+  color: #000;
 }
 .section-home-about__div-title__h3 {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #A39E9E;
+  color: #4A4A4A;
 }
 .section-home-about__img-profile {
   grid-column: 1/5;
@@ -143,15 +159,23 @@ body {
   justify-content: center;
   align-items: center;
 }
+.section-home-about__div-information__section-experience__img--icon1 {
+  width: 3.1rem;
+  height: 3.1rem;
+}
+.section-home-about__div-information__section-experience__img--icon2 {
+  width: 2.9rem;
+  height: 2.9rem;
+}
 .section-home-about__div-information__section-experience__title {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #4A4A4A;
+  color: #000;
 }
 .section-home-about__div-information__section-experience__info {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #A39E9E;
+  color: #4A4A4A;
 }
 .section-home-about__p--about-me {
   grid-column: 1/5;
@@ -160,7 +184,7 @@ body {
   text-align: justify;
   font-size: 1.4rem;
   font-weight: 400;
-  color: #4A4A4A;
+  color: #000;
 }
 .section-home-about__button {
   grid-column: 1/5;
@@ -177,6 +201,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+}
+.section-home-about__button__img {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 .section-home-about__button__p {
   font-size: 1.4rem;
