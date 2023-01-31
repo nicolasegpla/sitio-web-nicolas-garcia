@@ -18,6 +18,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1.6rem;
+  height: 100vh;
 }
 .section-home-1__h1 {
   grid-column: 1/4;
