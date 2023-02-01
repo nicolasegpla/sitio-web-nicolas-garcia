@@ -21,6 +21,8 @@ $support-color: #AA0CF8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1.6rem;
+    min-width: 32.8rem;
+    max-width: 40rem;
 }
 @mixin titleSectionHome {
     margin-top: 7.4rem;
@@ -78,4 +80,8 @@ body {
     
     font-family:$font ;
     font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
