@@ -121,7 +121,7 @@ body {
   max-width: 40rem;
 }
 .section-home-about__div-title {
-  margin-top: 5.4rem;
+  margin-top: 7.4rem;
   grid-column: 2/4;
   justify-self: center;
   display: flex;
@@ -229,7 +229,7 @@ body {
   max-width: 40rem;
 }
 .section-home-skills__div-title {
-  margin-top: 5.4rem;
+  margin-top: 7.4rem;
   grid-column: 2/4;
   justify-self: center;
   display: flex;
