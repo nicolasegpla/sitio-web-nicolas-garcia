@@ -1,0 +1,1 @@
+const sectionHomeSkillsRoot = document.querySelector('#section-home-skills__div-root');

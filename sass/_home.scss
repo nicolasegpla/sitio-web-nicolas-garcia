@@ -156,3 +156,47 @@
         @include global.buttonSectionsHome;
     }
 }
+//Third section skills
+.section-home-skills {
+    @include global.sectionHome;
+    &__div-title {
+        @include global.titleSectionHome;
+    }
+    &__div-root {
+        grid-column: 1/5;
+        display: grid;
+        margin-top: 4.8rem;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.8rem;
+        justify-self: center;
+        &__skill {
+            margin-top: 1.3rem;
+            width: 15.7rem;
+            height: 12.7rem;
+            border: 0.2rem solid #0000001a;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__img {
+                width: 5.4rem;
+                height: 5.4rem;
+            }
+            &__p-h1 {
+                margin-top: 0.9rem;
+                font-size: global.$font-size-Paragraph-primary;
+                font-weight: 500;
+                color: global.$primary-text-color;
+            }
+            &__p-h2 {
+                font-size: global.$font-size-Paragraph-secondary;
+                font-weight: 400;
+                color: global.$secondary-text-color;
+            }
+        }
+    }
+    &__button {
+        @include global.buttonSectionsHome;
+    }
+}
