@@ -121,7 +121,7 @@ body {
   max-width: 40rem;
 }
 .section-home-about__div-title {
-  margin-top: 7.4rem;
+  margin-top: 5.4rem;
   grid-column: 2/4;
   justify-self: center;
   display: flex;
@@ -204,8 +204,8 @@ body {
   color: #fff;
   border: none;
   border-radius: 1.2rem;
-  margin-top: 3.2rem;
-  margin-bottom: 4.5rem;
+  margin-top: 4.2rem;
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,7 +229,7 @@ body {
   max-width: 40rem;
 }
 .section-home-skills__div-title {
-  margin-top: 7.4rem;
+  margin-top: 5.4rem;
   grid-column: 2/4;
   justify-self: center;
   display: flex;
@@ -290,8 +290,8 @@ body {
   color: #fff;
   border: none;
   border-radius: 1.2rem;
-  margin-top: 3.2rem;
-  margin-bottom: 4.5rem;
+  margin-top: 4.2rem;
+  margin-bottom: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
