@@ -122,7 +122,7 @@ body {
 }
 .section-home-about__div-title {
   margin-top: 7.4rem;
-  grid-column: 2/4;
+  grid-column: 1/5;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -229,7 +229,7 @@ body {
 }
 .section-home-skills__div-title {
   margin-top: 7.4rem;
-  grid-column: 2/4;
+  grid-column: 1/5;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -302,6 +302,78 @@ body {
 .section-home-skills__button__p {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+.section-home-service {
+  margin: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.6rem;
+  min-width: 32.8rem;
+  max-width: 40rem;
+}
+.section-home-service__div-title {
+  margin-top: 7.4rem;
+  grid-column: 1/5;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-home-service__div-title__h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.section-home-service__div-title__h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.section-home-service__div-service {
+  margin-top: 4.8rem;
+  grid-column: 1/5;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+.section-home-service__div-service__article {
+  width: 24.5rem;
+  height: 24rem;
+  padding-top: 7rem;
+  padding-left: 4.5rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 2.7rem;
+}
+.section-home-service__div-service__article__img {
+  width: 3rem;
+  height: 2.8rem;
+}
+.section-home-service__div-service__article__h2 {
+  width: 9.5rem;
+  margin-top: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.section-home-service__div-service__article__div {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 0.6rem;
+}
+.section-home-service__div-service__article__div__p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4A4A4A;
+}
+.section-home-service__div-service__article__div__img {
+  width: 1.9rem;
+  height: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
