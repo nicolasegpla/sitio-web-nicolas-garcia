@@ -207,13 +207,7 @@
         @include global.titleSectionHome;
     }
     &__div-service {
-        margin-top: 4.8rem;
-        grid-column: 1/5;
-        justify-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include global.boxBaseArticle;
         gap: 3.2rem;
         &__article {
             width: 24.5rem;
@@ -251,4 +245,85 @@
         }
 
     }
+}
+//fifth section contact
+.section-home-contact {
+    @include global.sectionHome;
+    &__div-title {
+        @include global.titleSectionHome;
+    }
+    &__article-whatsapp {
+        width: 30.7rem;
+        height: 15.1rem;
+        border: 0.2rem solid #0000001a;
+        border-radius: 1.1rem;
+        @include global.boxBaseArticle;
+        &__img {
+            width: 5.7rem;
+            height: 5.7rem;
+            padding-top: 2.1rem;
+        }
+        &__h2 {
+            padding-top: 0.7rem;
+            font-size: global.$font-size-Heading-4;
+            font-weight: 500;
+            color: global.$primary-text-color;
+        }
+        &__p {
+            padding-top: 0.5rem;
+            font-size: global.$font-size-Paragraph-secondary;
+            font-weight: 500;
+            color: global.$secondary-text-color;   
+        }
+        &__div {
+            padding-top: 0.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.9rem;
+            &__p {
+                font-size: global.$font-size-Paragraph-primary;
+                font-weight: 500;
+                color: global.$primary-text-color;
+            }
+            &__img {
+                width: 1.9rem;
+                height: 2rem;
+            }
+        }
+    }
+    &__h3 {
+        margin-top: 3.2rem;
+        grid-column: 1/5;
+        justify-self: center;
+        font-size: global.$font-size-Heading-3;
+        font-weight: 500;
+        color: global.$primary-text-color;
+    }
+    &__form {
+        margin-top: 3.2rem;
+        grid-column: 1/5;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.9rem;
+        &__input-name {
+            @include global.inputFormBase;
+        }
+        &__input-correo {
+            @include global.inputFormBase;
+        } 
+        &__textarea {
+            @include global.inputFormBase;
+            height: 17.7rem;
+            padding-top: 1.8rem;
+        }
+        &__button {
+            @include global.buttonSectionsHome;
+            margin-top: 3.2rem;
+        }
+    }
+
 }

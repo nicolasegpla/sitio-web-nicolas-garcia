@@ -53,11 +53,11 @@ $support-color: #AA0CF8;
     border: none;
     border-radius: 1.2rem;
     margin-top: 6.1rem;
-    //margin-bottom: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+    font-family: $font;
     &__img {
         width: 1.8rem;
         height: 1.8rem;
@@ -67,7 +67,25 @@ $support-color: #AA0CF8;
         font-weight: 400;
     }
 }
-
+@mixin boxBaseArticle {
+    margin-top: 4.8rem;
+    grid-column: 1/5;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin inputFormBase {
+    padding-left: 3.1rem;
+    width: 32.7rem;
+    height: 5.7rem;
+    border: 0.2rem solid #0000001a;
+    border-radius: 1.2rem;
+    font-family: $font;
+    font-size: $font-size-Paragraph-primary;
+    color: $secondary-text-color;
+}
 html {
     font-size: 62.5%;
 }

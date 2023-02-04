@@ -209,6 +209,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+  font-family: "Poppins", sans-serif;
 }
 .section-home-about__button__img {
   width: 1.8rem;
@@ -294,6 +295,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+  font-family: "Poppins", sans-serif;
 }
 .section-home-skills__button__img {
   width: 1.8rem;
@@ -374,6 +376,155 @@ body {
 .section-home-service__div-service__article__div__img {
   width: 1.9rem;
   height: 2rem;
+}
+
+.section-home-contact {
+  margin: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.6rem;
+  min-width: 32.8rem;
+  max-width: 40rem;
+}
+.section-home-contact__div-title {
+  margin-top: 7.4rem;
+  grid-column: 1/5;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-home-contact__div-title__h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.section-home-contact__div-title__h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.section-home-contact__article-whatsapp {
+  width: 30.7rem;
+  height: 15.1rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1.1rem;
+  margin-top: 4.8rem;
+  grid-column: 1/5;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-home-contact__article-whatsapp__img {
+  width: 5.7rem;
+  height: 5.7rem;
+  padding-top: 2.1rem;
+}
+.section-home-contact__article-whatsapp__h2 {
+  padding-top: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+.section-home-contact__article-whatsapp__p {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4A4A4A;
+}
+.section-home-contact__article-whatsapp__div {
+  padding-top: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+}
+.section-home-contact__article-whatsapp__div__p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000;
+}
+.section-home-contact__article-whatsapp__div__img {
+  width: 1.9rem;
+  height: 2rem;
+}
+.section-home-contact__h3 {
+  margin-top: 3.2rem;
+  grid-column: 1/5;
+  justify-self: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.section-home-contact__form {
+  margin-top: 3.2rem;
+  grid-column: 1/5;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+}
+.section-home-contact__form__input-name {
+  padding-left: 3.1rem;
+  width: 32.7rem;
+  height: 5.7rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #4A4A4A;
+}
+.section-home-contact__form__input-correo {
+  padding-left: 3.1rem;
+  width: 32.7rem;
+  height: 5.7rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #4A4A4A;
+}
+.section-home-contact__form__textarea {
+  padding-left: 3.1rem;
+  width: 32.7rem;
+  height: 5.7rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #4A4A4A;
+  height: 17.7rem;
+  padding-top: 1.8rem;
+}
+.section-home-contact__form__button {
+  grid-column: 1/5;
+  justify-self: center;
+  width: 17.8rem;
+  height: 4rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  margin-top: 6.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3.2rem;
+}
+.section-home-contact__form__button__img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.section-home-contact__form__button__p {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
