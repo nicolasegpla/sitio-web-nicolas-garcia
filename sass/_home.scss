@@ -327,3 +327,57 @@
     }
 
 }
+
+//footer mobil
+.footer-mobil {
+    @include global.sectionHome;
+    margin-top: 4.5rem;
+    &__h2 {
+        grid-column: 1/5;
+        justify-self: center;
+        font-size: global.$font-size-Heading-2;
+        font-weight: 500;
+    }
+    &__h2--secon-color {
+        color: global.$secondary-color;
+    }
+    &__div-nav {
+        grid-column: 1/5;
+        justify-self: center;
+        margin-top: 1.8rem;
+        &__ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.8rem;
+            list-style: none;
+        }
+        &__ul li {
+            font-size: global.$font-size-Paragraph-primary;
+            font-weight: 400;
+            color: global.$primary-text-color;
+        }
+    }
+    &__div-social {
+        grid-column: 1/5;
+        justify-self: center;
+        margin-top: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.4rem;
+    }
+    &__div-social img {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    &__p-copy {
+        grid-column: 1/5;
+        justify-self: center;
+        margin-top: 1.8rem;
+        margin-bottom: 4.5rem;
+        font-size: global.$font-size-Paragraph-primary;
+        font-weight: 500;
+        color: global.$primary-text-color;
+    }
+}

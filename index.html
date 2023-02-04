@@ -110,9 +110,9 @@
         </article>
         <h3 class="section-home-contact__h3">Escribe me acerca de tu proyecto</h3>
         <form id="form" class="section-home-contact__form" action="">
-            <input class="section-home-contact__form__input-name" name="nombre" type="text" placeholder="Como es tu nombre?">
-            <input class="section-home-contact__form__input-correo" name="correo" type="text" placeholder="Correo electronico">
-            <textarea class="section-home-contact__form__textarea" name="mensaje" id="" cols="30" rows="10" placeholder="Escribe me, en que puedo ayudarte"></textarea>
+            <input class="section-home-contact__form__input-name" name="nombre" type="text" placeholder="Como es tu nombre?" required>
+            <input class="section-home-contact__form__input-correo" name="correo" type="text" placeholder="Correo electronico" required>
+            <textarea class="section-home-contact__form__textarea" name="mensaje" id="" cols="30" rows="10" placeholder="Escribe me, en que puedo ayudarte" required></textarea>
             <button id="button" class="section-home-contact__form__button" type="submit">
                 <img class="section-home-contact__form__button__img" src="assets/icons/prime_send.svg" alt="icono de enviar">
                 <p class="section-home-contact__form__button__p">Enviar mensaje</p>
@@ -120,6 +120,25 @@
         </form>
     </section>
     <!--final del home-->
+
+    <!--Footer mobil-->
+    <footer class="footer-mobil">
+        <h2 class="footer-mobil__h2">Nicolas<span class="footer-mobil__h2--secon-color">Garcia</span></h2>
+        <div class="footer-mobil__div-nav">
+            <ul class="footer-mobil__div-nav__ul">
+                <li class="footer-mobil__div-nav__ul__li-item-1">Sobre mi</li>
+                <li class="footer-mobil__div-nav__ul__li-item-2">Proyectos</li>
+                <li class="footer-mobil__div-nav__ul__li-item-3">Servicios</li>
+            </ul>
+        </div>
+        <div class="footer-mobil__div-social">
+            <img class="footer-mobil__div-social__item-1" src="assets/icons/instagram.svg" alt="Logo de instagram">
+            <img class="footer-mobil__div-social__item-2" src="assets/icons/linkedin.svg" alt="Logo de linkedin">
+            <img class="footer-mobil__div-social__item-3" src="assets/icons/dribbble 1.svg" alt="logo de dribbble">
+            <img class="footer-mobil__div-social__item-4" src="assets/icons/whatsapp 1.svg" alt="logo de whatsapp">
+        </div>
+        <p class="footer-mobil__p-copy">@nicolasgarcia. All rights reserved</p>
+    </footer>
 <script src="src/nodos.js"></script>
 <script src="src/skills.js"></script>
 

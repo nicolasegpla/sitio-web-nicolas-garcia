@@ -527,4 +527,62 @@ body {
   font-weight: 400;
 }
 
+.footer-mobil {
+  margin: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.6rem;
+  min-width: 32.8rem;
+  max-width: 40rem;
+  margin-top: 4.5rem;
+}
+.footer-mobil__h2 {
+  grid-column: 1/5;
+  justify-self: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.footer-mobil__h2--secon-color {
+  color: #0173EF;
+}
+.footer-mobil__div-nav {
+  grid-column: 1/5;
+  justify-self: center;
+  margin-top: 1.8rem;
+}
+.footer-mobil__div-nav__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  list-style: none;
+}
+.footer-mobil__div-nav__ul li {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000;
+}
+.footer-mobil__div-social {
+  grid-column: 1/5;
+  justify-self: center;
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+.footer-mobil__div-social img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.footer-mobil__p-copy {
+  grid-column: 1/5;
+  justify-self: center;
+  margin-top: 1.8rem;
+  margin-bottom: 4.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000;
+}
+
 /*# sourceMappingURL=styles.css.map */
