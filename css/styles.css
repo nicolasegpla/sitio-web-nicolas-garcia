@@ -604,9 +604,9 @@ body {
   list-style: none;
 }
 .div-menu-desplegable__ul li {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 500;
-  line-height: 5.5rem;
+  line-height: 8rem;
   color: #fff;
 }
 .div-menu-desplegable__img-boton-cierre {
