@@ -17,6 +17,10 @@ body {
   align-items: center;
 }
 
+.display {
+  display: none;
+}
+
 .section-home-1 {
   margin: 0 1.6rem;
   display: grid;
@@ -613,8 +617,8 @@ body {
   justify-self: center;
   margin-top: 4.2rem;
   margin-bottom: 6rem;
-  width: 6.4rem;
-  height: 6.4rem;
+  width: 4.4rem;
+  height: 4.4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
