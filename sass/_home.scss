@@ -2,7 +2,7 @@
 //first section home
 .section-home-1 {
     @include global.sectionHome;
-    height: 100vh;
+    height: 100%;
     &__h1 {
         grid-column: 1/4;
         padding-top: 4.4rem;
@@ -70,7 +70,6 @@
             font-size: global.$font-size-Paragraph-primary;
             font-weight: 400;
         }
-
     }
     &__div-2 {
         grid-column: 2/4;
