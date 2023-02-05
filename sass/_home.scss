@@ -2,9 +2,10 @@
 //first section home
 .section-home-1 {
     @include global.sectionHome;
+    height: 100vh;
     &__h1 {
         grid-column: 1/4;
-        margin-top: 4.4rem;
+        padding-top: 4.4rem;
         font-size: global.$font-size-Heading-1;
         font-weight: 600;
         line-height: 5rem;
