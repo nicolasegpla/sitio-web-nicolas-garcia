@@ -2,7 +2,6 @@
 //first section home
 .section-home-1 {
     @include global.sectionHome;
-    height: 100%;
     &__h1 {
         grid-column: 1/4;
         padding-top: 4.4rem;
@@ -379,5 +378,32 @@
         font-size: global.$font-size-Paragraph-primary;
         font-weight: 500;
         color: global.$primary-text-color;
+    }
+}
+
+//mobile version dropdown menu
+.div-menu-desplegable {
+    @include global.sectionHome;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 1.6rem;
+    background-color: global.$secondary-color;
+    border-radius: 0 0 0 10rem;
+    &__ul {
+        grid-column: 1/5;
+        padding-top: 3rem;
+        list-style: none;
+    }
+    &__ul li {
+        font-size: global.$font-size-Heading-1;
+        font-weight: 500;
+        line-height: 5.5rem;
+        color: global.$withe-color;
+    }
+    &__img-boton-cierre {
+        grid-column: 1/5;
+        justify-self: center;
+        width: 6.4rem;
+        height: 6.4rem;
     }
 }

@@ -24,7 +24,6 @@ body {
   column-gap: 1.6rem;
   min-width: 32.8rem;
   max-width: 40rem;
-  height: 100%;
 }
 .section-home-1__h1 {
   grid-column: 1/4;
@@ -584,6 +583,37 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   color: #000;
+}
+
+.div-menu-desplegable {
+  margin: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.6rem;
+  min-width: 32.8rem;
+  max-width: 40rem;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 1.6rem;
+  background-color: #0173EF;
+  border-radius: 0 0 0 10rem;
+}
+.div-menu-desplegable__ul {
+  grid-column: 1/5;
+  padding-top: 3rem;
+  list-style: none;
+}
+.div-menu-desplegable__ul li {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 5.5rem;
+  color: #fff;
+}
+.div-menu-desplegable__img-boton-cierre {
+  grid-column: 1/5;
+  justify-self: center;
+  width: 6.4rem;
+  height: 6.4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
