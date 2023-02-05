@@ -24,6 +24,7 @@ body {
   column-gap: 1.6rem;
   min-width: 32.8rem;
   max-width: 40rem;
+  height: 100vh;
 }
 .section-home-1__h1 {
   grid-column: 1/4;
