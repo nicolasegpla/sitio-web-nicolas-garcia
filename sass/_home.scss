@@ -385,7 +385,6 @@
 .div-menu-desplegable {
     @include global.sectionHome;
     width: 100vw;
-    height: 100vh;
     padding-left: 1.6rem;
     background-color: global.$secondary-color;
     border-radius: 0 0 0 10rem;
@@ -403,7 +402,8 @@
     &__img-boton-cierre {
         grid-column: 1/5;
         justify-self: center;
-        margin-top: 2rem;
+        margin-top: 4.2rem;
+        margin-bottom: 6rem;
         width: 6.4rem;
         height: 6.4rem;
     }

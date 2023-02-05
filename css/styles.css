@@ -593,7 +593,6 @@ body {
   min-width: 32.8rem;
   max-width: 40rem;
   width: 100vw;
-  height: 100vh;
   padding-left: 1.6rem;
   background-color: #0173EF;
   border-radius: 0 0 0 10rem;
@@ -612,7 +611,8 @@ body {
 .div-menu-desplegable__img-boton-cierre {
   grid-column: 1/5;
   justify-self: center;
-  margin-top: 2rem;
+  margin-top: 4.2rem;
+  margin-bottom: 6rem;
   width: 6.4rem;
   height: 6.4rem;
 }
