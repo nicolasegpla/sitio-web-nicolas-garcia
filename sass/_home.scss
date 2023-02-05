@@ -397,12 +397,13 @@
     &__ul li {
         font-size: global.$font-size-display-1;
         font-weight: 500;
-        line-height: 8rem;
+        line-height: 6rem;
         color: global.$withe-color;
     }
     &__img-boton-cierre {
         grid-column: 1/5;
         justify-self: center;
+        margin-top: 2rem;
         width: 6.4rem;
         height: 6.4rem;
     }

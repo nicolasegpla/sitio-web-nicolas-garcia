@@ -606,12 +606,13 @@ body {
 .div-menu-desplegable__ul li {
   font-size: 6rem;
   font-weight: 500;
-  line-height: 8rem;
+  line-height: 6rem;
   color: #fff;
 }
 .div-menu-desplegable__img-boton-cierre {
   grid-column: 1/5;
   justify-self: center;
+  margin-top: 2rem;
   width: 6.4rem;
   height: 6.4rem;
 }
