@@ -2,9 +2,15 @@
 //first section home
 .section-home-1 {
     @include global.sectionHome;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    
     &__h1 {
         grid-column: 1/4;
         padding-top: 4.4rem;
+        padding-left: 1.6rem;
+        max-width: 36.3rem;
         font-size: global.$font-size-Heading-1;
         font-weight: 600;
         line-height: 5rem;
@@ -19,6 +25,7 @@
     &__div-1 {
         grid-column: 1/5;
         margin-top: 2.3rem;
+        padding-left: 1.6rem;
         gap: 0.8rem;
         display: flex;
         justify-content: flex-start;
@@ -36,6 +43,7 @@
     &__p {
         grid-column: 1/5;
         margin-top: 2.3rem;
+        padding-left: 1.6rem;
         width: 30.4rem;
         font-size: global.$font-size-Paragraph-primary;
         font-weight: 400;
@@ -145,6 +153,7 @@
     &__p--about-me {
         grid-column: 1/5;
         justify-self: center;
+        max-width: 52.0rem;
         margin: 3.2rem 3rem 0 3rem;
         text-align: justify;
         font-size: global.$font-size-Paragraph-primary;
@@ -384,16 +393,25 @@
 //mobile version dropdown menu
 .div-menu-desplegable {
     @include global.sectionHome;
-    width: 100vw;
+    display: none;
+    margin: 0;
+    width: 100%;
+    height: 50rem;
+    grid-column: 1/5;
+    justify-self: center;
     padding-left: 1.6rem;
     background-color: global.$secondary-color;
     border-radius: 0 0 0 10rem;
+    position: absolute;
+    animation-duration: 2s;
+    animation-name: slidein;
     &__ul {
         grid-column: 1/5;
         padding-top: 3rem;
         list-style: none;
     }
     &__ul li {
+        min-width: 33.8rem;
         font-size: global.$font-size-display-1;
         font-weight: 500;
         line-height: 6rem;
@@ -402,9 +420,38 @@
     &__img-boton-cierre {
         grid-column: 1/5;
         justify-self: center;
-        margin-top: 4.2rem;
-        margin-bottom: 6rem;
         width: 4.4rem;
         height: 4.4rem;
     }
 }
+
+//animaciones de menu desplegable movil
+  @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 0%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    
+  }
+
+  @keyframes slideinoff {
+    from {
+        margin-left: 0%;
+        width: 100%
+      }
+    
+      to {
+        margin-right: 0%;
+        width: 0%;
+      }
+    
+  }
+  .animacion {
+    animation-duration: 2s;
+    animation-name: slideinoff;
+  }

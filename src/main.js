@@ -1,15 +1,20 @@
-//funcion para cerrar automaticamnet el menu movil
-function scrollDownMenu() {
-    mobileVersionDropdownMenu.classList.add('display');
+function myFunction() {
+    if(mobileVersionDropdownMenu.style.display === 'grid') {
+        mobileVersionDropdownMenu.style.display = 'none';
+    }else {
+        mobileVersionDropdownMenu.style.display = 'none';
+    }
 }
-window.addEventListener('scroll', scrollDownMenu);
-//funcion para abrir el menu movil
-function openMobilMenu() {
-    mobileVersionDropdownMenu.classList.remove('display');
+
+divMenuDesplegableImgBotonCierre.addEventListener('click', myFunction);
+window.addEventListener('scroll', myFunction);
+
+function myFunction2() {
+    if(mobileVersionDropdownMenu.style.display === 'none') {
+        mobileVersionDropdownMenu.style.display = 'grid';
+    }else {
+        mobileVersionDropdownMenu.style.display = 'grid';
+    }
 }
-sectionHome1MenuHamburguesa.addEventListener('click', openMobilMenu);
-//funcion para cerra el menu movil manual
-function closeMobilMenu() {
-    mobileVersionDropdownMenu.classList.add('display');
-}
-divMenuDesplegableImgBotonCierre.addEventListener('click', closeMobilMenu);
+
+sectionHome1MenuHamburguesa.addEventListener('click', myFunction2);

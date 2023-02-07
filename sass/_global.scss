@@ -21,8 +21,6 @@ $support-color: #AA0CF8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1.6rem;
-    min-width: 32.8rem;
-    max-width: 40rem;
 }
 @mixin titleSectionHome {
     margin-top: 7.4rem;
@@ -104,4 +102,23 @@ body {
 }
 .display {
     display: none;
+        
 }
+.animacion {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 0%;
+      }
+    
+  }
+  
