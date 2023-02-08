@@ -88,7 +88,7 @@ body {
   font-weight: 400;
 }
 .section-home-1__img-cover {
-  grid-column: 2/4;
+  grid-column: 1/5;
   justify-self: center;
   margin-top: 3.7rem;
   width: 50rem;
