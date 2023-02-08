@@ -91,8 +91,8 @@ body {
   grid-column: 2/4;
   justify-self: center;
   margin-top: 3.7rem;
-  width: 16.3rem;
-  height: 21rem;
+  width: 50rem;
+  height: 35rem;
 }
 .section-home-1__button {
   grid-column: 1/5;
