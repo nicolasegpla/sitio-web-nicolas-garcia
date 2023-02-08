@@ -393,7 +393,7 @@
 //mobile version dropdown menu
 .div-menu-desplegable {
     @include global.sectionHome;
-    display: none;
+    display: grid;
     margin: 0;
     width: 100%;
     height: 60rem;
@@ -403,8 +403,8 @@
     background-color: global.$secondary-color;
     border-radius: 0 0 0 10rem;
     position: absolute;
-    animation-duration: 2s;
-    animation-name: slidein;
+    transition: transform 0.8s;
+    transform: translateY(-100%);
     &__ul {
         grid-column: 1/5;
         padding-top: 3rem;
@@ -424,34 +424,8 @@
         height: 4.4rem;
     }
 }
+.transformYMenuMovil {
+    transform: translateY(0);
+}
 
-//animaciones de menu desplegable movil
-  @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 0%
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-    
-  }
 
-  @keyframes slideinoff {
-    from {
-        margin-left: 0%;
-        width: 100%
-      }
-    
-      to {
-        margin-right: 0%;
-        width: 0%;
-      }
-    
-  }
-  .animacion {
-    animation-duration: 2s;
-    animation-name: slideinoff;
-  }
