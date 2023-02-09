@@ -14,9 +14,22 @@ $withe-color: #fff;
 $primary-text-color: #000;
 $secondary-text-color: #4A4A4A;
 $support-color: #AA0CF8;
-
+//breackpoints
+$breakpoints: (
+  md: 744px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get(
+        $breakpoints, $breakpoint)) {
+        @content;
+    }
+}
 //parametros del bloque de secction home
 @mixin sectionHome {
+    width: 100%;
     margin: 0 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -73,6 +86,9 @@ $support-color: #AA0CF8;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-up(md) {
+        flex-direction: row;
+    }
 }
 @mixin inputFormBase {
     padding-left: 3.1rem;

@@ -177,6 +177,9 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 1.8rem;
         justify-self: center;
+        @include global.media-up(md) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
         &__skill {
             margin-top: 1.3rem;
             width: 15.7rem;
@@ -266,6 +269,12 @@
         border: 0.2rem solid #0000001a;
         border-radius: 1.1rem;
         @include global.boxBaseArticle;
+        @include global.media-up(md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &__img {
             width: 5.7rem;
             height: 5.7rem;
@@ -405,6 +414,9 @@
     position: absolute;
     transition: transform 0.8s;
     transform: translateY(-100%);
+    @include global.media-up(md) {
+        grid-column: 3/5;
+    }
     &__ul {
         grid-column: 1/5;
         padding-top: 3rem;

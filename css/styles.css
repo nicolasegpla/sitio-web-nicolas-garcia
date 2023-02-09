@@ -18,6 +18,7 @@ body {
 }
 
 .section-home-1 {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -118,6 +119,7 @@ body {
 }
 
 .section-home-about {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -225,6 +227,7 @@ body {
 }
 
 .section-home-skills {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -256,6 +259,11 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 1.8rem;
   justify-self: center;
+}
+@media screen and (min-width: 744px) {
+  .section-home-skills__div-root {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .section-home-skills__div-root__skill {
   margin-top: 1.3rem;
@@ -309,6 +317,7 @@ body {
 }
 
 .section-home-service {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -342,6 +351,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3.2rem;
+}
+@media screen and (min-width: 744px) {
+  .section-home-service__div-service {
+    flex-direction: row;
+  }
 }
 .section-home-service__div-service__article {
   width: 24.5rem;
@@ -379,6 +393,7 @@ body {
 }
 
 .section-home-contact {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -415,6 +430,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 744px) {
+  .section-home-contact__article-whatsapp {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 744px) {
+  .section-home-contact__article-whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .section-home-contact__article-whatsapp__img {
   width: 5.7rem;
@@ -526,6 +554,7 @@ body {
 }
 
 .footer-mobil {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -582,6 +611,7 @@ body {
 }
 
 .div-menu-desplegable {
+  width: 100%;
   margin: 0 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -598,6 +628,11 @@ body {
   position: absolute;
   transition: transform 0.8s;
   transform: translateY(-100%);
+}
+@media screen and (min-width: 744px) {
+  .div-menu-desplegable {
+    grid-column: 3/5;
+  }
 }
 .div-menu-desplegable__ul {
   grid-column: 1/5;
