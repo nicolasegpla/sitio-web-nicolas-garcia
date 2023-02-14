@@ -11,6 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="div-barnav-desktop">
+        <h2 class="div-barnav-desktop__h2">Nicolas<span class="div-barnav-desktop__h2--second-color">Garcia</span></h2>
+        <ul class="div-barnav-desktop__ul">
+            <li class="div-barnav-desktop__ul__li--inicio">Inicio</li>
+            <li class="div-barnav-desktop__ul__li--sobre-mi">Sobre mi</li>
+            <li class="div-barnav-desktop__ul__li--skills">Skills</li>
+            <li class="div-barnav-desktop__ul__li--proyectos">Proyectos</li>
+            <li class="div-barnav-desktop__ul__li--servicios">Servicios</li>
+            <li class="div-barnav-desktop__ul__li--contacto">Contacto</li>
+        </ul>
+    </div>
     <!--inicio del home-->
     <!--first section home-->
     <section class="section-home-1">
@@ -33,15 +44,15 @@
             <h2 class="section-home-1__div-1__h2">Front-end Developer</h2>
         </div>
         <p class="section-home-1__p">Hola! soy desarrollador web, muy apasionado y dedicado con mi trabajo.</p>
-        <img class="section-home-1__img-cover" src="assets/img/foto_no_exif.jpg" alt="persona sentada con una laptop">
+        <img class="section-home-1__img-cover" src="assets/img/foto_no_cover.png    " alt="persona sentada con una laptop">
         <button class="section-home-1__button">
             <p class="section-home-1__button__p">Di, Hola!</p>
             <img class="section-home-1__button__img" src="assets/icons/prime_send.svg" alt="imagen de enviar">
         </button>
-        <div class="section-home-1__div-2">
+       <!-- <div class="section-home-1__div-2">
             <p class="section-home-1__div-2__p">scroll down</p>
             <img class="section-home-1__div-2__img" src="assets/icons/pajamas_scroll-down.svg" alt="scroll down">
-        </div>
+        </div>-->
     </section>
     <!--second section about me-->
     <section class="section-home-about">
@@ -111,6 +122,7 @@
             <h2 class="section-home-contact__div-title__h2">Contacto</h2>
             <h3 class="section-home-contact__div-title__h3">Ponte en contacto</h3>
         </div>
+        <img class="section-home-contact__img-contact" src="assets/img/contacto-img.png" alt="imagen de la seccion de contacto">
         <article class="section-home-contact__article-whatsapp">
             <img class="section-home-contact__article-whatsapp__img" src="assets/icons/ic_outline-whatsapp.svg" alt="logo de whatsapp de boton de contacto">
             <h2 class="section-home-contact__article-whatsapp__h2">Whatsapp</h2>
@@ -120,11 +132,11 @@
                 <img class="section-home-contact__article-whatsapp__div__img" src="assets/icons/pajamas_scroll-down (1).svg" alt="logo que indica izquierda">
             </div>
         </article>
-        <h3 class="section-home-contact__h3">Escribe me acerca de tu proyecto</h3>
+        <h3 class="section-home-contact__h3">Escribeme acerca de tu proyecto</h3>
         <form id="form" class="section-home-contact__form" action="">
             <input class="section-home-contact__form__input-name" name="nombre" type="text" placeholder="Como es tu nombre?" required>
             <input class="section-home-contact__form__input-correo" name="correo" type="text" placeholder="Correo electronico" required>
-            <textarea class="section-home-contact__form__textarea" name="mensaje" id="" cols="30" rows="10" placeholder="Escribe me, en que puedo ayudarte" required></textarea>
+            <textarea class="section-home-contact__form__textarea" name="mensaje" id="" cols="30" rows="10" placeholder="Escribeme, en que puedo ayudarte" required></textarea>
             <button id="button" class="section-home-contact__form__button" type="submit">
                 <img class="section-home-contact__form__button__img" src="assets/icons/prime_send.svg" alt="icono de enviar">
                 <p class="section-home-contact__form__button__p">Enviar mensaje</p>

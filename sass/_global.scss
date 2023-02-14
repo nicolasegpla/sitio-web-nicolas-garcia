@@ -27,6 +27,12 @@ $breakpoints: (
         @content;
     }
 }
+@mixin media-down($breakpoint) {
+    @media screen and (max-width: map-get(
+        $breakpoints, $breakpoint)) {
+        @content;
+    }
+}
 //parametros del bloque de secction home
 @mixin sectionHome {
     width: 100%;
@@ -34,6 +40,11 @@ $breakpoints: (
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1.6rem;
+    @include media-up(lg) {
+        margin: 0 2.4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 2.4rem;
+    }
 }
 @mixin titleSectionHome {
     margin-top: 7.4rem;
@@ -43,6 +54,10 @@ $breakpoints: (
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-up(lg) {
+        grid-column: 1/13;
+        justify-self: center;
+    }
     &__h2 {
         font-size: $font-size-Heading-2;
         font-weight: 600;

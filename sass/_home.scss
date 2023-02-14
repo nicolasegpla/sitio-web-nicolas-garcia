@@ -5,7 +5,12 @@
     margin: 0;
     overflow: hidden;
     position: relative;
-    
+    @include global.media-up(lg) {
+        margin-left: 1.6rem;
+        margin-top: 0;
+        padding-bottom: 6rem;
+        background-color: #0174ef34;
+    }    
     &__h1 {
         grid-column: 1/4;
         padding-top: 4.4rem;
@@ -14,6 +19,14 @@
         font-size: global.$font-size-Heading-1;
         font-weight: 600;
         line-height: 5rem;
+        @include global.media-up(md) {
+            padding-left: 3.9rem;
+        }
+        @include global.media-up(lg) {
+            grid-column: 3/6;
+            justify-self: start;
+            padding-left: 0;
+        }    
     }
     &__menu-hamburguesa {
         grid-column: 4/5;
@@ -21,6 +34,9 @@
         justify-self: center;
         width: 2.8rem;
         height: 2.7rem;
+        @include global.media-up(lg) {
+            display: none;
+        } 
     }
     &__div-1 {
         grid-column: 1/5;
@@ -30,6 +46,15 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        height: 0;
+        @include global.media-up(md) {
+            padding-left: 3.9rem;
+        }
+        @include global.media-up(lg) {
+            grid-column: 3/6;
+            justify-self: start;
+            padding-left: 0;
+        } 
         &__img {
             width: 5rem;
             height: 0.1rem;
@@ -41,19 +66,36 @@
         }
     }
     &__p {
+        height: 0;
         grid-column: 1/5;
         margin-top: 2.3rem;
         padding-left: 1.6rem;
         width: 30.4rem;
         font-size: global.$font-size-Paragraph-primary;
         font-weight: 400;
+        @include global.media-up(md) {
+            padding-left: 3.9rem;
+            width: 32rem;
+        }
+        @include global.media-up(lg) {
+            grid-column: 3/6;
+            justify-self: start;
+            padding-left: 0;
+        } 
     }
     &__img-cover {
         grid-column: 1/5;
         justify-self: center;
-        margin-top: 3.7rem;
+        margin-top: 10rem;
         width: 40rem;
         height: 30rem;
+        @include global.media-up(lg) {
+            grid-column: 6/13;
+            justify-self: center;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            margin-top: 3.9rem;
+        } 
     }
     &__button {
         grid-column: 1/5;
@@ -69,6 +111,12 @@
         justify-content: center;
         align-items: center;
         gap: 0.8rem;
+        @include global.media-up(lg) {
+            grid-column: 3/6;
+            justify-self: start;
+            padding-left: 0;  
+            cursor: pointer;
+        } 
         &__img {
             width: 2.4rem;
             height: 2.4rem;
@@ -86,6 +134,12 @@
         justify-content: center;
         align-items: center;
         gap: 0.8rem;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+            justify-self: center;
+            margin-top: 6.8rem;
+            margin-bottom: 3rem;
+        } 
         &__p {
             font-size: global.$font-size-Paragraph-primary;
             font-weight: 500;
@@ -112,6 +166,15 @@
         border-radius: 2.2rem;
         border: 1rem solid #0000001a;
         object-fit: cover;
+        @include global.media-up(lg) {
+            width: 31.8rem;
+            height: 28.0rem;
+            margin-right: 2.4rem;
+            grid-column: 1/7;
+            justify-self: end;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
     }
     &__div-information {
         grid-column: 1/5;
@@ -121,6 +184,12 @@
         justify-content: center;
         align-items: center;
         gap: 1.9rem;
+        @include global.media-up(lg) {
+            grid-column: 7/13;
+            justify-self: start;
+            margin-top: 5rem;
+            margin-left: 2.4rem;
+        }
         &__section-experience {
             width: 12.4rem;
             height: 10rem;
@@ -130,6 +199,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
             &__img--icon1 {
                 width: 3.1rem;
                 height: 3.1rem;
@@ -159,9 +229,24 @@
         font-size: global.$font-size-Paragraph-primary;
         font-weight: 400;
         color: global.$primary-text-color;
+        @include global.media-up(lg) {
+            grid-column: 7/13;
+            justify-self: start;
+            width: 40rem;
+            margin-left: 0;
+            margin-top: 0;
+            margin-left: 2.4rem;
+        }
     }
     &__button {
         @include global.buttonSectionsHome;
+        @include global.media-up(lg) {
+            grid-column: 7/13;
+            justify-self: start;
+            margin-top: 0;
+            margin-left: 2.4rem;
+            cursor: pointer;
+        }
     }
 }
 //Third section skills
@@ -179,6 +264,9 @@
         justify-self: center;
         @include global.media-up(md) {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include global.media-up(lg) {
+           grid-column: 1/13;
         }
         &__skill {
             margin-top: 1.3rem;
@@ -209,6 +297,10 @@
     }
     &__button {
         @include global.buttonSectionsHome;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+            cursor: pointer;
+         }
     }
 }
 //fourth section service
@@ -220,6 +312,10 @@
     &__div-service {
         @include global.boxBaseArticle;
         gap: 3.2rem;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+            cursor: pointer;
+         }
         &__article {
             width: 24.5rem;
             height: 24rem;
@@ -263,6 +359,16 @@
     &__div-title {
         @include global.titleSectionHome;
     }
+    &__img-contact {
+        margin-top: 3rem;
+        grid-column: 3/7;
+        justify-self: end;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        @include global.media-down(lg) {
+            display: none;
+        }
+    }
     &__article-whatsapp {
         width: 30.7rem;
         height: 15.1rem;
@@ -274,6 +380,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        @include global.media-up(lg) {
+            width: 35rem;
+            margin-right: 2.4rem;
+            grid-column: 3/7;
+            justify-self: end;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            margin-top: 36rem;
+            cursor: pointer;
         }
         &__img {
             width: 5.7rem;
@@ -316,6 +432,14 @@
         font-size: global.$font-size-Heading-3;
         font-weight: 500;
         color: global.$primary-text-color;
+        @include global.media-up(lg) {
+            margin-top: 3.8rem;
+            margin-left: 1.2rem;
+            grid-column: 7/12;
+            justify-self: start;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
     }
     &__form {
         margin-top: 3.2rem;
@@ -326,6 +450,14 @@
         justify-content: center;
         align-items: center;
         gap: 1.9rem;
+        @include global.media-up(lg) {
+            margin-right: 2.4rem;
+            grid-column: 7/11;
+            justify-self: start;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            margin-top: 8.2rem
+        }
         &__input-name {
             @include global.inputFormBase;
         }
@@ -340,6 +472,7 @@
         &__button {
             @include global.buttonSectionsHome;
             margin-top: 3.2rem;
+            cursor: pointer;
         }
     }
 
@@ -354,6 +487,11 @@
         justify-self: center;
         font-size: global.$font-size-Heading-2;
         font-weight: 500;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+            margin-top: 10rem;
+            cursor: pointer;
+         }
     }
     &__h2--secon-color {
         color: global.$secondary-color;
@@ -362,6 +500,9 @@
         grid-column: 1/5;
         justify-self: center;
         margin-top: 1.8rem;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+         }
         &__ul {
             display: flex;
             justify-content: center;
@@ -373,6 +514,18 @@
             font-size: global.$font-size-Paragraph-primary;
             font-weight: 400;
             color: global.$primary-text-color;
+            @include global.media-up(lg) {
+                font-size: global.$font-size-Heading-4;
+                font-weight: 500;
+                cursor: pointer;
+             }
+        }
+        &__ul li:hover {
+            @include global.media-up(lg) {
+                transition: 0.5s;
+                color: global.$secondary-color;
+                font-size: global.$font-size-Heading-3;
+             }
         }
     }
     &__div-social {
@@ -383,10 +536,14 @@
         justify-content: center;
         align-items: center;
         gap: 1.4rem;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+         }
     }
     &__div-social img {
         width: 3.2rem;
         height: 3.2rem;
+        cursor: pointer;
     }
     &__p-copy {
         grid-column: 1/5;
@@ -396,6 +553,9 @@
         font-size: global.$font-size-Paragraph-primary;
         font-weight: 500;
         color: global.$primary-text-color;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+         }
     }
 }
 
@@ -417,6 +577,9 @@
     @include global.media-up(md) {
         grid-column: 3/5;
     }
+    @include global.media-up(lg) {
+        display: none;
+    } 
     &__ul {
         grid-column: 1/5;
         padding-top: 3rem;
@@ -438,6 +601,46 @@
 }
 .transformYMenuMovil {
     transform: translateY(0);
+}
+//barra de navegacion desktop
+.div-barnav-desktop {
+    grid-column: 1/13;
+    width: 100%;
+    height: 7.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0174ef34;
+    @include global.media-down(lg) {
+        display: none;
+    }
+    &__h2 {
+        margin-left: 2.4rem;
+        font-size: global.$font-size-Heading-2;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    &__h2--second-color {
+        color: global.$secondary-color;
+    }
+    &__ul {
+        margin-right: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+    }
+    &__ul li {
+        font-size: global.$font-size-Heading-4;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    &__ul li:hover {
+        transition: 0.5s;
+        font-size: global.$font-size-Heading-3;
+        color: global.$secondary-color;
+    }
 }
 
 
