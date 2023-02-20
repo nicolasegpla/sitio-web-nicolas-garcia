@@ -11,29 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="div-barnav-desktop">
-        <h2 class="div-barnav-desktop__h2">Nicolas<span class="div-barnav-desktop__h2--second-color">Garcia</span></h2>
-        <ul class="div-barnav-desktop__ul">
-            <li class="div-barnav-desktop__ul__li--inicio">Inicio</li>
-            <li class="div-barnav-desktop__ul__li--sobre-mi">Sobre mi</li>
-            <li class="div-barnav-desktop__ul__li--skills">Skills</li>
-            <li class="div-barnav-desktop__ul__li--proyectos">Proyectos</li>
-            <li class="div-barnav-desktop__ul__li--servicios">Servicios</li>
-            <li class="div-barnav-desktop__ul__li--contacto">Contacto</li>
-        </ul>
-    </div>
+    <header class="header-container">
+        <div class="div-barnav-desktop">
+            <h2 class="div-barnav-desktop__h2">Nicolas<span  class="div-barnav-desktop__h2--second-color">Garcia</span></h2>
+            <ul class="div-barnav-desktop__ul">
+                <li class="div-barnav-desktop__ul__li--inicio" id="inicio">Inicio</li>
+                <li class="div-barnav-desktop__ul__li--sobre-mi" id="sobre-mi-button">Sobre mi</li>
+                <li class="div-barnav-desktop__ul__li--skills" id="skillsbutton">Skills</li>
+                <li id="proyectos-button" class="div-barnav-desktop__ul__li--proyectos">Proyectos</li>
+                <li id="servicios-button" class="div-barnav-desktop__ul__li--servicios">Servicios</li>
+                <li id="contacto-button" class="div-barnav-desktop__ul__li--contacto">Contacto</li>
+            </ul>
+        </div>
+    </header>
+    
     <!--inicio del home-->
     <!--first section home-->
-    <section class="section-home-1">
+    <section id="inicio"  class="section-home-1">
             <!--mobile version dropdown menu-->
             <div class="div-menu-desplegable">
                 <ul class="div-menu-desplegable__ul">
-                    <li class="div-menu-desplegable__ul__item-1">Inicio</li>
-                    <li class="div-menu-desplegable__ul__item-2">Sobre mi</li>
-                    <li class="div-menu-desplegable__ul__item-3">Skills</li>
-                    <li class="div-menu-desplegable__ul__item-4">Proyectos</li>
-                    <li class="div-menu-desplegable__ul__item-5">Servicios</li>
-                    <li class="div-menu-desplegable__ul__item-6">Contacto</li>
+                    <li id="inicio-mobil" class="div-menu-desplegable__ul__item-1">Inicio</li>
+                    <li id="Sobre-mi-mobil" class="div-menu-desplegable__ul__item-2">Sobre mi</li>
+                    <li id="skills-mobil" class="div-menu-desplegable__ul__item-3">Skills</li>
+                    <li id="proyectos-mobil" class="div-menu-desplegable__ul__item-4">Proyectos</li>
+                    <li id="servicios-mobil" class="div-menu-desplegable__ul__item-5">Servicios</li>
+                    <li id="contacto-mobil" class="div-menu-desplegable__ul__item-6">Contacto</li>
                 </ul>
                 <img class="div-menu-desplegable__img-boton-cierre" src="assets/icons/cerrar-simbolo-de-boton-circular (1) 1.svg" alt="icono que indica la accion de cerrar menu">
             </div>
@@ -55,7 +58,7 @@
         </div>-->
     </section>
     <!--second section about me-->
-    <section class="section-home-about">
+    <section id="sobre-mi" class="section-home-about">
         <div class="section-home-about__div-title">
             <h2 class="section-home-about__div-title__h2">Sobre mi</h2>
             <h3 class="section-home-about__div-title__h3">Mi introduccion</h3>
@@ -80,7 +83,7 @@
         </button>
     </section>
     <!--Third section skills-->
-    <section class="section-home-skills">
+    <section id="skills" class="section-home-skills">
         <div class="section-home-skills__div-title">
             <h2 class="section-home-skills__div-title__h2">Skills</h2>
             <h3 class="section-home-skills__div-title__h3">Mi nivel tecnico</h3>
@@ -92,7 +95,7 @@
         </button>
     </section>
     <!--fourth section service-->
-    <section class="section-home-service">
+    <section id="servicios" class="section-home-service">
         <div class="section-home-service__div-title">
             <h2 class="section-home-service__div-title__h2">servicios</h2>
             <h3 class="section-home-service__div-title__h3">Como puedo ayudarte</h3>
@@ -117,7 +120,7 @@
         </div>
     </section>
     <!--fifth section contact-->
-    <section class="section-home-contact">
+    <section id="contacto" class="section-home-contact">
         <div class="section-home-contact__div-title">
             <h2 class="section-home-contact__div-title__h2">Contacto</h2>
             <h3 class="section-home-contact__div-title__h3">Ponte en contacto</h3>
@@ -136,7 +139,7 @@
         <form id="form" class="section-home-contact__form" action="">
             <input class="section-home-contact__form__input-name" name="nombre" type="text" placeholder="Como es tu nombre?" required>
             <input class="section-home-contact__form__input-correo" name="correo" type="text" placeholder="Correo electronico" required>
-            <textarea class="section-home-contact__form__textarea" name="mensaje" id="" cols="30" rows="10" placeholder="Escribeme, en que puedo ayudarte" required></textarea>
+            <textarea class="section-home-contact__form__textarea" name="mensaje" id="" cols="30" rows="10" placeholder="Escribeme, en que puedo ayudarte?" required></textarea>
             <button id="button" class="section-home-contact__form__button" type="submit">
                 <img class="section-home-contact__form__button__img" src="assets/icons/prime_send.svg" alt="icono de enviar">
                 <p class="section-home-contact__form__button__p">Enviar mensaje</p>

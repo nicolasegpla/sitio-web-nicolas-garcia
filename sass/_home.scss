@@ -4,9 +4,9 @@
     @include global.sectionHome;
     margin: 0;
     overflow: hidden;
-    position: relative;
     @include global.media-up(lg) {
-        margin-left: 1.6rem;
+        margin-right: 0;
+        margin-left: 0;
         margin-top: 0;
         padding-bottom: 6rem;
         background-color: #0174ef34;
@@ -603,6 +603,12 @@
     transform: translateY(0);
 }
 //barra de navegacion desktop
+.header-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .div-barnav-desktop {
     grid-column: 1/13;
     width: 100%;
@@ -610,7 +616,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0174ef34;
+    background-color: global.$secondary-color;
     @include global.media-down(lg) {
         display: none;
     }
@@ -618,10 +624,11 @@
         margin-left: 2.4rem;
         font-size: global.$font-size-Heading-2;
         font-weight: 500;
+        color: global.$withe-color;
         cursor: pointer;
     }
     &__h2--second-color {
-        color: global.$secondary-color;
+        color: global.$primary-color;
     }
     &__ul {
         margin-right: 2.4rem;
@@ -632,6 +639,7 @@
         list-style: none;
     }
     &__ul li {
+        transition: 0.5s;
         font-size: global.$font-size-Heading-4;
         font-weight: 500;
         cursor: pointer;
@@ -639,7 +647,7 @@
     &__ul li:hover {
         transition: 0.5s;
         font-size: global.$font-size-Heading-3;
-        color: global.$secondary-color;
+        color: global.$withe-color;
     }
 }
 

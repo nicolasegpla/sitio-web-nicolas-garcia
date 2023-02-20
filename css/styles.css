@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,18 +26,20 @@ body {
   column-gap: 1.6rem;
   margin: 0;
   overflow: hidden;
-  position: relative;
 }
 @media screen and (min-width: 992px) {
   .section-home-1 {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 992px) {
   .section-home-1 {
-    margin-left: 1.6rem;
+    margin-right: 0;
+    margin-left: 0;
     margin-top: 0;
     padding-bottom: 6rem;
     background-color: rgba(1, 116, 239, 0.2039215686);
@@ -214,10 +217,12 @@ body {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .section-home-about__div-title {
-  margin-top: 7.4rem;
+  margin-top: 6rem;
   grid-column: 1/5;
   justify-self: center;
   display: flex;
@@ -229,6 +234,7 @@ body {
   .section-home-about__div-title {
     grid-column: 1/13;
     justify-self: center;
+    margin-top: 10rem;
   }
 }
 .section-home-about__div-title__h2 {
@@ -374,10 +380,12 @@ body {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .section-home-skills__div-title {
-  margin-top: 7.4rem;
+  margin-top: 6rem;
   grid-column: 1/5;
   justify-self: center;
   display: flex;
@@ -389,6 +397,7 @@ body {
   .section-home-skills__div-title {
     grid-column: 1/13;
     justify-self: center;
+    margin-top: 10rem;
   }
 }
 .section-home-skills__div-title__h2 {
@@ -488,10 +497,12 @@ body {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .section-home-service__div-title {
-  margin-top: 7.4rem;
+  margin-top: 6rem;
   grid-column: 1/5;
   justify-self: center;
   display: flex;
@@ -503,6 +514,7 @@ body {
   .section-home-service__div-title {
     grid-column: 1/13;
     justify-self: center;
+    margin-top: 10rem;
   }
 }
 .section-home-service__div-title__h2 {
@@ -583,10 +595,12 @@ body {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .section-home-contact__div-title {
-  margin-top: 7.4rem;
+  margin-top: 6rem;
   grid-column: 1/5;
   justify-self: center;
   display: flex;
@@ -598,6 +612,7 @@ body {
   .section-home-contact__div-title {
     grid-column: 1/13;
     justify-self: center;
+    margin-top: 10rem;
   }
 }
 .section-home-contact__div-title__h2 {
@@ -803,6 +818,8 @@ body {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .footer-mobil__h2 {
@@ -915,6 +932,8 @@ body {
     margin: 0 2.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 2.4rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 744px) {
@@ -950,6 +969,13 @@ body {
   transform: translateY(0);
 }
 
+.header-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .div-barnav-desktop {
   grid-column: 1/13;
   width: 100%;
@@ -957,7 +983,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(1, 116, 239, 0.2039215686);
+  background-color: #0173EF;
 }
 @media screen and (max-width: 992px) {
   .div-barnav-desktop {
@@ -968,10 +994,11 @@ body {
   margin-left: 2.4rem;
   font-size: 2.5rem;
   font-weight: 500;
+  color: #fff;
   cursor: pointer;
 }
 .div-barnav-desktop__h2--second-color {
-  color: #0173EF;
+  color: #000;
 }
 .div-barnav-desktop__ul {
   margin-right: 2.4rem;
@@ -982,6 +1009,7 @@ body {
   list-style: none;
 }
 .div-barnav-desktop__ul li {
+  transition: 0.5s;
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
@@ -989,7 +1017,7 @@ body {
 .div-barnav-desktop__ul li:hover {
   transition: 0.5s;
   font-size: 1.8rem;
-  color: #0173EF;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

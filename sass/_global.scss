@@ -44,10 +44,12 @@ $breakpoints: (
         margin: 0 2.4rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         column-gap: 2.4rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 @mixin titleSectionHome {
-    margin-top: 7.4rem;
+    margin-top: 6rem;
     grid-column: 1/5;
     justify-self: center;
     display: flex;
@@ -57,6 +59,7 @@ $breakpoints: (
     @include media-up(lg) {
         grid-column: 1/13;
         justify-self: center;
+        margin-top: 10rem;
     }
     &__h2 {
         font-size: $font-size-Heading-2;
@@ -122,6 +125,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     font-family:$font ;
