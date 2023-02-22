@@ -18,6 +18,10 @@ body {
   align-items: center;
 }
 
+.inactive {
+  display: none;
+}
+
 .section-home-1 {
   width: 100%;
   margin: 0 1.6rem;
@@ -295,6 +299,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 1s;
 }
 .section-home-about__div-information__section-experience__img--icon1 {
   width: 3.1rem;
@@ -313,6 +318,12 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: #4A4A4A;
+}
+@media screen and (min-width: 992px) {
+  .section-home-about__div-information__section-experience:hover {
+    transition: 0.1s;
+    border: 0.2rem solid #0173EF;
+  }
 }
 .section-home-about__p--about-me {
   grid-column: 1/5;
@@ -484,6 +495,37 @@ body {
     cursor: pointer;
   }
 }
+.section-home-skills__button--less {
+  grid-column: 1/5;
+  justify-self: center;
+  width: 17.8rem;
+  height: 4rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  margin-top: 6.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+.section-home-skills__button--less__img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.section-home-skills__button--less__p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  .section-home-skills__button--less {
+    grid-column: 1/13;
+    cursor: pointer;
+  }
+}
 
 .section-home-service {
   width: 100%;
@@ -555,6 +597,7 @@ body {
   padding-left: 4.5rem;
   border: 0.2rem solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 2.7rem;
+  transition: 0.5s;
 }
 .section-home-service__div-service__article__img {
   width: 3rem;
@@ -581,6 +624,12 @@ body {
 .section-home-service__div-service__article__div__img {
   width: 1.9rem;
   height: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .section-home-service__div-service__article:hover {
+    transition: 0.5s;
+    border: 0.2rem solid #0173EF;
+  }
 }
 
 .section-home-contact {
@@ -673,6 +722,7 @@ body {
     grid-row-end: 2;
     margin-top: 36rem;
     cursor: pointer;
+    transition: 0.5s;
   }
 }
 .section-home-contact__article-whatsapp__img {
@@ -707,6 +757,12 @@ body {
 .section-home-contact__article-whatsapp__div__img {
   width: 1.9rem;
   height: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .section-home-contact__article-whatsapp:hover {
+    transition: 0.5s;
+    border: 0.2rem solid #0173EF;
+  }
 }
 .section-home-contact__h3 {
   margin-top: 3.2rem;
@@ -755,6 +811,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   color: #4A4A4A;
+  transition: 0.5s;
+}
+@media screen and (min-width: 992px) {
+  .section-home-contact__form__input-name:hover {
+    transition: 0.5s;
+    border: 0.2rem solid #0173EF;
+  }
 }
 .section-home-contact__form__input-correo {
   padding-left: 3.1rem;
@@ -765,6 +828,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   color: #4A4A4A;
+  transition: 0.5s;
+}
+@media screen and (min-width: 992px) {
+  .section-home-contact__form__input-correo:hover {
+    transition: 0.5s;
+    border: 0.2rem solid #0173EF;
+  }
 }
 .section-home-contact__form__textarea {
   padding-left: 3.1rem;
@@ -777,6 +847,13 @@ body {
   color: #4A4A4A;
   height: 17.7rem;
   padding-top: 1.8rem;
+  transition: 0.5s;
+}
+@media screen and (min-width: 992px) {
+  .section-home-contact__form__textarea:hover {
+    transition: 0.5s;
+    border: 0.2rem solid #0173EF;
+  }
 }
 .section-home-contact__form__button {
   grid-column: 1/5;
@@ -862,7 +939,9 @@ body {
 }
 @media screen and (min-width: 992px) {
   .footer-mobil__div-nav__ul li {
+    transition: 0.5s;
     font-size: 1.6rem;
+    color: #000;
     font-weight: 500;
     cursor: pointer;
   }
@@ -872,6 +951,7 @@ body {
     transition: 0.5s;
     color: #0173EF;
     font-size: 1.8rem;
+    font-weight: 500;
   }
 }
 .footer-mobil__div-social {

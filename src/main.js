@@ -2,6 +2,7 @@ window.addEventListener('scroll', () => {
     mobileVersionDropdownMenu.classList.remove('transformYMenuMovil');
 });
 
+
 function menuMobilToggle() {
     mobileVersionDropdownMenu.classList.toggle('transformYMenuMovil');
 }
@@ -12,6 +13,7 @@ divMenuDesplegableImgBotonCierre.addEventListener('click', menuMobilToggle);
 inicioButton.addEventListener('click', scrollTop);
 inicioMobilButton.addEventListener('click', scrollTop);
 logoH2.addEventListener('click', scrollTop);
+logoFooter.addEventListener('click', scrollTop);
 function scrollTop() {
     location.hash = '#inicio';
     document.documentElement.scrollTop = 0;
@@ -50,4 +52,54 @@ proyectosButton.addEventListener('click', () => {
     location.hash = '#proyectos';
 });
 
+//navegacion del footer
+sobreMiFooter.addEventListener('click', () => {
+    location.hash = '#sobre-mi';
+});
+proyectosFooter.addEventListener('click', () => {
+    location.hash = '#proyectos';
+});
+serviciosFooter.addEventListener('click', () => {
+    location.hash = '#servicios';
+});
 
+
+//botones de whatsapp
+function goToPageWhatsapp() {
+    window.open ('https://wa.me/573167578206');
+}
+buttonSectionHome1.addEventListener('click', goToPageWhatsapp);
+buttonWhatsappContact.addEventListener('click', goToPageWhatsapp);
+whatsapp.addEventListener('click', goToPageWhatsapp);
+
+//github
+function goToPageGithub() {
+    window.open ('https://github.com/nicolasegpla');
+}
+github.addEventListener('click', goToPageGithub);
+
+//instagram
+function goToPageInstagram() {
+    window.open ('https://www.instagram.com/thisisnicolasp/');
+}
+instagram.addEventListener('click', goToPageInstagram);
+
+//linkedin
+function goToPageLinkedin() {
+    window.open ('https://www.linkedin.com/in/frontend-nicolas-garcia/');
+}
+linkedin.addEventListener('click', goToPageLinkedin);
+
+//botones de skills
+
+function buttonSkillsMore() {
+    buttonMoreSkills.style.display = 'none';
+    buttonLessSkills.style.display = 'flex';
+}
+buttonMoreSkills.addEventListener('click', buttonSkillsMore);
+
+function buttonSkillsLess() {
+    buttonMoreSkills.style.display = 'flex';
+    buttonLessSkills.style.display = 'none';
+}
+buttonLessSkills.addEventListener('click', buttonSkillsLess);

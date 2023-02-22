@@ -200,6 +200,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            transition: 1s;
             &__img--icon1 {
                 width: 3.1rem;
                 height: 3.1rem;
@@ -218,6 +219,12 @@
                 font-weight: 500;
                 color: global.$secondary-text-color;
             }
+        }
+        &__section-experience:hover {
+            @include global.media-up(lg) {
+                transition: 0.1s;
+                border: 0.2rem solid global.$secondary-color;
+             }
         }
     }
     &__p--about-me {
@@ -302,6 +309,14 @@
             cursor: pointer;
          }
     }
+    &__button--less {
+        @include global.buttonSectionsHome;
+        display: none;
+        @include global.media-up(lg) {
+            grid-column: 1/13;
+            cursor: pointer;
+         }
+    }
 }
 //fourth section service
 .section-home-service {
@@ -323,6 +338,7 @@
             padding-left: 4.5rem;
             border: 0.2rem solid #0000001a;
             border-radius: 2.7rem;
+            transition: 0.5s;
             &__img {
                 width: 3rem;
                 height: 2.8rem;
@@ -350,7 +366,12 @@
                 }
             }
         }
-
+        &__article:hover {
+            @include global.media-up(lg) {
+                transition: 0.5s;
+                border: 0.2rem solid global.$secondary-color;
+             }
+        }
     }
 }
 //fifth section contact
@@ -390,6 +411,7 @@
             grid-row-end: 2;
             margin-top: 36rem;
             cursor: pointer;
+            transition: 0.5s;
         }
         &__img {
             width: 5.7rem;
@@ -424,6 +446,12 @@
                 height: 2rem;
             }
         }
+    }
+    &__article-whatsapp:hover {
+        @include global.media-up(lg) {
+            transition: 0.5s;
+            border: 0.2rem solid global.$secondary-color;
+         }
     }
     &__h3 {
         margin-top: 3.2rem;
@@ -460,14 +488,35 @@
         }
         &__input-name {
             @include global.inputFormBase;
+            transition: 0.5s;
+        }
+        &__input-name:hover {
+            @include global.media-up(lg) {
+                transition: 0.5s;
+                border: 0.2rem solid global.$secondary-color;
+             }
         }
         &__input-correo {
             @include global.inputFormBase;
+            transition: 0.5s;
         } 
+        &__input-correo:hover {
+            @include global.media-up(lg) {
+                transition: 0.5s;
+                border: 0.2rem solid global.$secondary-color;
+             }
+        }
         &__textarea {
             @include global.inputFormBase;
             height: 17.7rem;
             padding-top: 1.8rem;
+            transition: 0.5s;
+        }
+        &__textarea:hover {
+            @include global.media-up(lg) {
+                transition: 0.5s;
+                border: 0.2rem solid global.$secondary-color;
+             }
         }
         &__button {
             @include global.buttonSectionsHome;
@@ -515,7 +564,9 @@
             font-weight: 400;
             color: global.$primary-text-color;
             @include global.media-up(lg) {
+                transition: 0.5s;
                 font-size: global.$font-size-Heading-4;
+                color: global.$primary-color;
                 font-weight: 500;
                 cursor: pointer;
              }
@@ -525,6 +576,7 @@
                 transition: 0.5s;
                 color: global.$secondary-color;
                 font-size: global.$font-size-Heading-3;
+                font-weight: 500;
              }
         }
     }

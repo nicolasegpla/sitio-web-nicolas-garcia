@@ -48,7 +48,7 @@
         </div>
         <p class="section-home-1__p">Hola! soy desarrollador web, muy apasionado y dedicado con mi trabajo.</p>
         <img class="section-home-1__img-cover" src="assets/img/foto_no_cover.png    " alt="persona sentada con una laptop">
-        <button class="section-home-1__button">
+        <button id="section-home-1__button--di-hola" class="section-home-1__button">
             <p class="section-home-1__button__p">Di, Hola!</p>
             <img class="section-home-1__button__img" src="assets/icons/prime_send.svg" alt="imagen de enviar">
         </button>
@@ -89,15 +89,19 @@
             <h3 class="section-home-skills__div-title__h3">Mi nivel tecnico</h3>
         </div>
         <div id="section-home-skills__div-root" class="section-home-skills__div-root"></div>
-        <button class="section-home-skills__button">
+        <button id="more-skills" class="section-home-skills__button">
             <img class="section-home-skills__button__img" src="assets/icons/mas 1.svg" alt="icono de ver mas tecnologias">
             <p class="section-home-skills__button__p">Ver mas</p>
+        </button>
+        <button id="less-skills" class="section-home-skills__button--less">
+            <img class="section-home-skills__button__img" src="assets/icons/minus.svg" alt="icono de ver mas tecnologias">
+            <p class="section-home-skills__button__p">Ver menos</p>
         </button>
     </section>
     <!--fourth section service-->
     <section id="servicios" class="section-home-service">
         <div class="section-home-service__div-title">
-            <h2 class="section-home-service__div-title__h2">servicios</h2>
+            <h2 class="section-home-service__div-title__h2">Servicios</h2>
             <h3 class="section-home-service__div-title__h3">Como puedo ayudarte</h3>
         </div>
         <div class="section-home-service__div-service">
@@ -126,7 +130,7 @@
             <h3 class="section-home-contact__div-title__h3">Ponte en contacto</h3>
         </div>
         <img class="section-home-contact__img-contact" src="assets/img/contacto-img.png" alt="imagen de la seccion de contacto">
-        <article class="section-home-contact__article-whatsapp">
+        <article id="button-whatsapp-contact" class="section-home-contact__article-whatsapp">
             <img class="section-home-contact__article-whatsapp__img" src="assets/icons/ic_outline-whatsapp.svg" alt="logo de whatsapp de boton de contacto">
             <h2 class="section-home-contact__article-whatsapp__h2">Whatsapp</h2>
             <p class="section-home-contact__article-whatsapp__p">+57 3167578206</p>
@@ -150,19 +154,20 @@
 
     <!--Footer mobil-->
     <footer class="footer-mobil">
-        <h2 class="footer-mobil__h2">Nicolas<span class="footer-mobil__h2--secon-color">Garcia</span></h2>
+        <h2 id="logo-footer" class="footer-mobil__h2">Nicolas<span class="footer-mobil__h2--secon-color">Garcia</span></h2>
         <div class="footer-mobil__div-nav">
             <ul class="footer-mobil__div-nav__ul">
-                <li class="footer-mobil__div-nav__ul__li-item-1">Sobre mi</li>
-                <li class="footer-mobil__div-nav__ul__li-item-2">Proyectos</li>
-                <li class="footer-mobil__div-nav__ul__li-item-3">Servicios</li>
+                <li id="sobre-mi-footer" class="footer-mobil__div-nav__ul__li-item-1">Sobre mi</li>
+                <li id="proyectos-footer" class="footer-mobil__div-nav__ul__li-item-2">Proyectos</li>
+                <li id="servicios-footer" class="footer-mobil__div-nav__ul__li-item-3">Servicios</li>
             </ul>
         </div>
         <div class="footer-mobil__div-social">
-            <img class="footer-mobil__div-social__item-1" src="assets/icons/instagram.svg" alt="Logo de instagram">
-            <img class="footer-mobil__div-social__item-2" src="assets/icons/linkedin.svg" alt="Logo de linkedin">
-            <img class="footer-mobil__div-social__item-3" src="assets/icons/dribbble 1.svg" alt="logo de dribbble">
-            <img class="footer-mobil__div-social__item-4" src="assets/icons/whatsapp 1.svg" alt="logo de whatsapp">
+            <img id="instagram" class="footer-mobil__div-social__item-1" src="assets/icons/instagram.svg" alt="Logo de instagram">
+            <img id="linkedin" class="footer-mobil__div-social__item-2" src="assets/icons/linkedin.svg" alt="Logo de linkedin">
+            <img id="dribbble" class="footer-mobil__div-social__item-3" src="assets/icons/dribbble 1.svg" alt="logo de dribbble">
+            <img id="whatsapp" class="footer-mobil__div-social__item-4" src="assets/icons/whatsapp 1.svg" alt="logo de whatsapp">
+            <img id="github" class="footer-mobil__div-social__item-5" src="assets/icons/github-1.svg" alt="Logo de github">
         </div>
         <p class="footer-mobil__p-copy">@nicolasgarcia. All rights reserved</p>
     </footer>
