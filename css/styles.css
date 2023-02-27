@@ -349,7 +349,18 @@ body {
   }
 }
 .section-home-about__a {
+  grid-column: 1/5;
+  justify-self: center;
   text-decoration: none;
+}
+@media screen and (min-width: 992px) {
+  .section-home-about__a {
+    grid-column: 7/13;
+    justify-self: start;
+    margin-top: 0;
+    margin-left: 2.4rem;
+    cursor: pointer;
+  }
 }
 .section-home-about__button {
   grid-column: 1/5;
@@ -380,7 +391,6 @@ body {
     grid-column: 7/13;
     justify-self: start;
     margin-top: 0;
-    margin-left: 2.4rem;
     cursor: pointer;
   }
 }

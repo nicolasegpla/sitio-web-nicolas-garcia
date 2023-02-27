@@ -249,7 +249,16 @@
         }
     }
     &__a {
+        grid-column: 1/5;
+        justify-self: center;
         text-decoration: none;
+        @include global.media-up(lg) {
+            grid-column: 7/13;
+            justify-self: start;
+            margin-top: 0;
+            margin-left: 2.4rem;
+            cursor: pointer; 
+        }
     }
     &__button {
         @include global.buttonSectionsHome;
@@ -257,7 +266,6 @@
             grid-column: 7/13;
             justify-self: start;
             margin-top: 0;
-            margin-left: 2.4rem;
             cursor: pointer;
         }
     }
