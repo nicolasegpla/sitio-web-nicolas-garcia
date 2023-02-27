@@ -51,10 +51,6 @@
             <p class="section-home-1__button__p">Di, Hola!</p>
             <img class="section-home-1__button__img" src="assets/icons/prime_send.svg" alt="imagen de enviar">
         </button>
-       <!-- <div class="section-home-1__div-2">
-            <p class="section-home-1__div-2__p">scroll down</p>
-            <img class="section-home-1__div-2__img" src="assets/icons/pajamas_scroll-down.svg" alt="scroll down">
-        </div>-->
     </section>
     <!--second section about me-->
     <section id="sobre-mi" class="section-home-about">
@@ -71,15 +67,16 @@
             </article>
             <article class="section-home-about__div-information__section-experience">
                 <img class="section-home-about__div-information__section-experience__img section-home-about__div-information__section-experience__img--icon2" src="assets/icons/fluent_cloud-sync-complete-16-regular.svg" alt="cloud de proyectos terminados">
-                <p class="section-home-about__div-information__section-experience__title">Proyectos</p>
-                <p class="section-home-about__div-information__section-experience__info">2 completados</p>
+                <p  class="section-home-about__div-information__section-experience__title">Proyectos</p>
+                <p class="section-home-about__div-information__section-experience__info"><span id="project-complete"></span><span id="project-projects"></span></p>
             </article>
         </div>
         <p class="section-home-about__p--about-me">Hola, mi nombre es Nicolas Garcia. Tengo más de 1 año de experiencia como Desarrollador Front-End. Valoro las relaciones con los clientes y trabajo brindando un servicio eficaz y de alta calidad.</p>
-        <button class="section-home-about__button">
+        <a class="section-home-about__a" href="assets/cv/CV NICOLAS GARCIA P.pdf"  download="CV NICOLAS GARCIA"><button class="section-home-about__button">
             <img class="section-home-about__button__img" src="assets/icons/ion_document-text-outline.svg" alt="icono de descarga de documento">
             <p class="section-home-about__button__p">Descargar cv</p>
-        </button>
+        </button></a>
+        
     </section>
     <!--Third section skills-->
     <section id="skills" class="section-home-skills">
@@ -131,6 +128,12 @@
                 <p class="section-home-contact__form__button__p">Enviar mensaje</p>
             </button>
         </form>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            emailjs.init('hkfYCRTAyBOiyqrP3')
+        </script>
     </section>
     <!--final del home-->
 
@@ -157,4 +160,5 @@
 <script src="src/projects.js"></script>
 <script src="src/main.js"></script>
 </body>
+<script src="src/form.js"></script>
 </html>

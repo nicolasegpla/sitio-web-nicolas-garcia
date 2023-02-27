@@ -56,7 +56,9 @@ sobreMiFooter.addEventListener('click', () => {
 proyectosFooter.addEventListener('click', () => {
     location.hash = '#proyectos';
 });
-
+contactoFooter.addEventListener('click', () => {
+    location.hash = '#contacto';
+});
 
 
 //botones de whatsapp

@@ -315,6 +315,9 @@ body {
   color: #000;
 }
 .section-home-about__div-information__section-experience__info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: #4A4A4A;
@@ -344,6 +347,9 @@ body {
     margin-top: 0;
     margin-left: 2.4rem;
   }
+}
+.section-home-about__a {
+  text-decoration: none;
 }
 .section-home-about__button {
   grid-column: 1/5;

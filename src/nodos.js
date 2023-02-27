@@ -30,6 +30,7 @@ const buttonLessSkills = document.querySelector('#less-skills');
 const logoFooter = document.querySelector('#logo-footer');
 const sobreMiFooter = document.querySelector('#sobre-mi-footer');
 const proyectosFooter = document.querySelector('#proyectos-footer');
+const contactoFooter = document.querySelector('#contacto-footer');
 
 
 //redes sociales

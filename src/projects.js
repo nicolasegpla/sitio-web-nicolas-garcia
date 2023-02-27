@@ -1,6 +1,6 @@
 //array de objetos con los proyectos a agregar
 const projects = [
-    {img: src = '/assets/projectsCards/nutricionAnimalCard.png', alt : 'logo html5', h1: 'NUTRICION ANIMAL', description:'En este proyecto estuve a cargo de la recopilacion de informacion, diseño, produccion y despliegue del producto digital nutricionanimal.com.co.', p: 'Ver sitio'}
+    {img: src = '/assets/projectsCards/nutricionAnimalCard.png', alt : 'logo html5', h1: 'NUTRICION ANIMAL', description:'En este proyecto estuve a cargo de la recopilacion de informacion, diseño, produccion y despliegue del producto digital nutricionanimal.com.co.', p: 'Ver sitio', id: 'nutricionAnimal'}
 ];
 
 //funcion para crear las skills en la seccion de skills del home
@@ -22,6 +22,7 @@ function createProjects() {
         divProjectPh2.classList.add('section-home-projects__div-root__project__p-h2');
         divProject.appendChild(divProjectPh2);
         const buttonCardProject = document.createElement('button');
+        buttonCardProject.setAttribute('id',`${project.id}`);
         buttonCardProject.classList.add('section-home-projects__div-root__project__button');
         divProject.appendChild(buttonCardProject);
         const pButtonCardProject = document.createElement('p');
@@ -38,3 +39,23 @@ function createProjects() {
     
 }
 createProjects();
+
+const buttonCardNutricionAnimal = document.querySelector('#nutricionAnimal'); 
+buttonCardNutricionAnimal.addEventListener('click', () => {
+    window.open('https://nutricionanimal.com.co/');
+});
+
+const projectsComplete = document.querySelector('#project-complete');
+projectsComplete.innerHTML = projects.length;
+
+const projectProjects = document.querySelector('#project-projects');
+
+function projectOrProjects() {
+    if(projects.length === 1) {
+        projectProjects.innerHTML = 'Completado';
+    }else{
+        projectProjects.innerHTML = 'Completados';
+    }
+}
+
+projectOrProjects();
