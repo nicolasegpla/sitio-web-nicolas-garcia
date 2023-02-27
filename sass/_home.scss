@@ -318,59 +318,57 @@
          }
     }
 }
-//fourth section service
-.section-home-service {
+//fourth section projects
+.section-home-projects {
     @include global.sectionHome;
     &__div-title {
         @include global.titleSectionHome;
     }
-    &__div-service {
-        @include global.boxBaseArticle;
-        gap: 3.2rem;
-        @include global.media-up(lg) {
-            grid-column: 1/13;
-            cursor: pointer;
-         }
-        &__article {
-            width: 24.5rem;
-            height: 24rem;
-            padding-top: 7rem;
-            padding-left: 4.5rem;
-            border: 0.2rem solid #0000001a;
-            border-radius: 2.7rem;
-            transition: 0.5s;
-            &__img {
-                width: 3rem;
-                height: 2.8rem;
-            }
-            &__h2 {
-                width: 9.5rem;
-                margin-top: 2.2rem;
-                font-size: global.$font-size-Heading-3;
-                font-weight: 600;
-            }
-            &__div {
-                margin-top: 1.6rem;
-                display: flex;
-                justify-content: flex-start;
-                align-content: center;
-                gap: 0.6rem;
-                &__p {
-                    font-size: global.$font-size-Paragraph-primary;
-                    font-weight: 500;
-                    color: global.$secondary-text-color;
-                }
-                &__img {
-                    width: 1.9rem;
-                    height: 2rem;
-                }
-            }
+    &__div-root {
+        grid-column: 1/5;
+        display: grid;
+        margin-top: 4.8rem;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        @include global.media-up(md) {
+            grid-template-columns: 1fr;
         }
-        &__article:hover {
-            @include global.media-up(lg) {
-                transition: 0.5s;
-                border: 0.2rem solid global.$secondary-color;
-             }
+        @include global.media-up(lg) {
+           grid-column: 1/13;
+        }
+        &__project {
+            margin-top: 1.3rem;
+            width: 26rem;
+            height: 36rem;
+            border: 0.2rem solid #0000001a;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            &__img {
+                width: 100%;
+                height: 12rem;
+            }
+            &__p-h1 {
+                margin-top: 3rem;
+                font-size: global.$font-size-Paragraph-primary;
+                font-weight: 500;
+                color: global.$primary-text-color;
+            }
+            &__p-h2 {
+                margin-top: 1.4rem;
+                font-size: global.$font-size-Paragraph-secondary;
+                font-weight: 400;
+                color: global.$secondary-text-color;
+                text-align: justify;
+                padding: 0 1.2rem;
+            }
+            &__button {
+                @include global.buttonSectionsHome;
+                margin-top: 2.5rem;
+                cursor: pointer;
+            }
         }
     }
 }

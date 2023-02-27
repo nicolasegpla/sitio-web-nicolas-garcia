@@ -19,8 +19,8 @@
                 <li class="div-barnav-desktop__ul__li--sobre-mi" id="sobre-mi-button">Sobre mi</li>
                 <li class="div-barnav-desktop__ul__li--skills" id="skillsbutton">Skills</li>
                 <li id="proyectos-button" class="div-barnav-desktop__ul__li--proyectos">Proyectos</li>
-                <li id="servicios-button" class="div-barnav-desktop__ul__li--servicios">Servicios</li>
                 <li id="contacto-button" class="div-barnav-desktop__ul__li--contacto">Contacto</li>
+                
             </ul>
         </div>
     </header>
@@ -35,7 +35,6 @@
                     <li id="Sobre-mi-mobil" class="div-menu-desplegable__ul__item-2">Sobre mi</li>
                     <li id="skills-mobil" class="div-menu-desplegable__ul__item-3">Skills</li>
                     <li id="proyectos-mobil" class="div-menu-desplegable__ul__item-4">Proyectos</li>
-                    <li id="servicios-mobil" class="div-menu-desplegable__ul__item-5">Servicios</li>
                     <li id="contacto-mobil" class="div-menu-desplegable__ul__item-6">Contacto</li>
                 </ul>
                 <img class="div-menu-desplegable__img-boton-cierre" src="assets/icons/cerrar-simbolo-de-boton-circular (1) 1.svg" alt="icono que indica la accion de cerrar menu">
@@ -72,8 +71,8 @@
             </article>
             <article class="section-home-about__div-information__section-experience">
                 <img class="section-home-about__div-information__section-experience__img section-home-about__div-information__section-experience__img--icon2" src="assets/icons/fluent_cloud-sync-complete-16-regular.svg" alt="cloud de proyectos terminados">
-                <p class="section-home-about__div-information__section-experience__title">Completados</p>
-                <p class="section-home-about__div-information__section-experience__info">2 + proyectos</p>
+                <p class="section-home-about__div-information__section-experience__title">Proyectos</p>
+                <p class="section-home-about__div-information__section-experience__info">2 completados</p>
             </article>
         </div>
         <p class="section-home-about__p--about-me">Hola, mi nombre es Nicolas Garcia. Tengo más de 1 año de experiencia como Desarrollador Front-End. Valoro las relaciones con los clientes y trabajo brindando un servicio eficaz y de alta calidad.</p>
@@ -98,30 +97,13 @@
             <p class="section-home-skills__button__p">Ver menos</p>
         </button>
     </section>
-    <!--fourth section service-->
-    <section id="servicios" class="section-home-service">
-        <div class="section-home-service__div-title">
-            <h2 class="section-home-service__div-title__h2">Servicios</h2>
-            <h3 class="section-home-service__div-title__h3">Como puedo ayudarte</h3>
+    <!--four section projects-->
+    <section id="proyectos" class="section-home-projects">
+        <div class="section-home-projects__div-title">
+            <h2 class="section-home-projects__div-title__h2">Proyectos</h2>
+            <h3 class="section-home-projects__div-title__h3">Mis proyectos</h3>
         </div>
-        <div class="section-home-service__div-service">
-            <article class="section-home-service__div-service__article">
-                <img class="section-home-service__div-service__article__img" src="assets/icons/ri_layout-2-line.svg" alt="Logo que representa el servicio de desarrollo web">
-                <h2 class="section-home-service__div-service__article__h2">Desarrollo web</h2>
-                <div class="section-home-service__div-service__article__div">
-                    <p class="section-home-service__div-service__article__div__p">Ver mas</p>
-                    <img class="section-home-service__div-service__article__div__img" src="assets/icons/pajamas_scroll-down (1).svg" alt="logo de flecha que indica ver mas">
-                </div>
-            </article>
-            <!--<article class="section-home-service__div-service__article">
-                <img class="section-home-service__div-service__article__img" src="assets/icons/ri_layout-2-line (1).svg" alt="Logo que representa el servicio de diseñador web">
-                <h2 class="section-home-service__div-service__article__h2">Diseño web</h2>
-                <div class="section-home-service__div-service__article__div">
-                    <p class="section-home-service__div-service__article__div__p">Ver mas</p>
-                    <img class="section-home-service__div-service__article__div__img" src="assets/icons/pajamas_scroll-down (1).svg" alt="logo de flecha que indica ver mas">
-                </div>
-            </article>-->
-        </div>
+        <div id="section-home-projects__div-root" class="section-home-projects__div-root"></div>
     </section>
     <!--fifth section contact-->
     <section id="contacto" class="section-home-contact">
@@ -159,13 +141,12 @@
             <ul class="footer-mobil__div-nav__ul">
                 <li id="sobre-mi-footer" class="footer-mobil__div-nav__ul__li-item-1">Sobre mi</li>
                 <li id="proyectos-footer" class="footer-mobil__div-nav__ul__li-item-2">Proyectos</li>
-                <li id="servicios-footer" class="footer-mobil__div-nav__ul__li-item-3">Servicios</li>
+                <li id="contacto-footer" class="footer-mobil__div-nav__ul__li-item-3">Contacto</li>
             </ul>
         </div>
         <div class="footer-mobil__div-social">
             <img id="instagram" class="footer-mobil__div-social__item-1" src="assets/icons/instagram.svg" alt="Logo de instagram">
             <img id="linkedin" class="footer-mobil__div-social__item-2" src="assets/icons/linkedin.svg" alt="Logo de linkedin">
-            <img id="dribbble" class="footer-mobil__div-social__item-3" src="assets/icons/dribbble 1.svg" alt="logo de dribbble">
             <img id="whatsapp" class="footer-mobil__div-social__item-4" src="assets/icons/whatsapp 1.svg" alt="logo de whatsapp">
             <img id="github" class="footer-mobil__div-social__item-5" src="assets/icons/github-1.svg" alt="Logo de github">
         </div>
@@ -173,6 +154,7 @@
     </footer>
 <script src="src/nodos.js"></script>
 <script src="src/skills.js"></script>
+<script src="src/projects.js"></script>
 <script src="src/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ window.addEventListener('scroll', () => {
 
 function menuMobilToggle() {
     mobileVersionDropdownMenu.classList.toggle('transformYMenuMovil');
+    location.hash = '';
 }
 sectionHome1MenuHamburguesa.addEventListener('click', menuMobilToggle);
 divMenuDesplegableImgBotonCierre.addEventListener('click', menuMobilToggle);
@@ -25,9 +26,7 @@ skillsMobilButton.addEventListener('click', () => {
 sobreMiMobilButton.addEventListener('click', () => {
     location.hash = '#sobre-mi';
 });
-serviciosMobilButton.addEventListener('click', () => {
-    location.hash = '#servicios';
-});
+
 contactoMobilButton.addEventListener('click', () => {
     location.hash = '#contacto';
 });
@@ -42,9 +41,7 @@ skillsButton.addEventListener('click', () => {
 aboutMeButton.addEventListener('click', () => {
     location.hash = '#sobre-mi';
 });
-serviciosButton.addEventListener('click', () => {
-    location.hash = '#servicios';
-});
+
 contactoButton.addEventListener('click', () => {
     location.hash = '#contacto';
 });
@@ -59,9 +56,7 @@ sobreMiFooter.addEventListener('click', () => {
 proyectosFooter.addEventListener('click', () => {
     location.hash = '#proyectos';
 });
-serviciosFooter.addEventListener('click', () => {
-    location.hash = '#servicios';
-});
+
 
 
 //botones de whatsapp
